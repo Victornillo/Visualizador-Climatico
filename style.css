@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Poppins:wght@200;300&family=Vidaloka&family=Young+Serif&display=swap');
+  html {
+      height: 100%;
+      font-family: 'Montserrat';
+
+      display: grid;
+      align-items: center;
+      justify-items: center;
+
+      --bg: #FCFCFC;
+      --bg-panel: #EBEBEB;
+      --color-text: #333333;
+  }
+
+  body {
+      background-color: var(--bg);
+  }
+
+  .caixa1 {
+      width: 230px;
+      padding: 25px;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 15px;
+  }
+
+  .caixa2 {
+      width: 350px;
+      padding: 15px;
+      text-align: center;
+      justify-content: space-around;
+      border: 1px solid #333333;
+  }
+
+  .container {
+      background-color: var(--bg-panel);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+
+  }
+
+
+  h1 {
+    font-family: 'Vidaloka', serif;
+    padding: 15px;
+
+
+      text-align: center;
+      justify-content: center;
+      color: var(--color-text);
+  }
+
+  p {
+      font-size: 65px;
+  }
+
+  p,
+  h2,
+  span,
+  sup {
+    font-family: 'Vidaloka', serif;
+
+      color: var(--color-text);
+      grid-area: content;
+      font-size: 1.1em;
+      line-height: 1.8em;
+      margin-top: 2em;
+  }
+
+  input[type=checkbox] {
+      height: 0;
+      width: 0;
+      visibility: hidden;
+  }
+
+  label {
+      cursor: pointer;
+      text-indent: -9999px;
+      width: 52px;
+      height: 27px;
+      background: grey;
+      float: right;
+      border-radius: 100px;
+      position: relative;
+  }
+
+  label::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 90px;
+      transition: 0.3s;
+  }
+
+  input:checked+label {
+      background-color: var(--color-headings);
+  }
+
+  input:checked+label::after {
+      left: calc(100% - 5px);
+      transform: translateX(-100%);
+  }
+
+  label:active:after {
+      width: 45px;
+  }
+
+  .tempo {
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+
+  .busca {
+      display: flex;
+      width: 300px;
+  }
+
+  .busca #searchInput {
+      flex: 1;
+      padding: 10px;
+      outline: none;
+      font-size: 15px;
+      border-radius: 5px;
+      border: 0;
+  }
+
+  .busca button {
+      padding: 10px;
+      font-size: 15px;
+      border: 0;
+      background-color: #555;
+      color: #FFF;
+      border-radius: 5px;
+      margin-left: 10px;
+      cursor: pointer;
+  }
+
+  .busca button:hover {
+      background-color: #444;
+  }
+
+  .resultado {
+      width: 300px;
+      display: none;
+      border: 5px solid rgba(255, 255, 255, .2);
+      background: transparent;
+      box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+      backdrop-filter: blur(55px);
+      color: #FFF;
+      margin-top: 20px;
+      border-radius: 10px;
+
+  }
+
+  .titulo {
+      width: 100%;
+      color: var(--color-text);
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .info {
+      display: flex;
+      width: 100%;
+  }
+
+  .info .temp {
+      flex: 1;
+      text-align: center;
+  }
+
+  .info .vento {
+      flex: 1;
+      text-align: center;
+  }
+
+  .tempTitulo,
+  .ventoTitulo {
+      color: #000000;
+      font-size: 16px;
+      margin-bottom: 5px;
+  }
+
+  .tempInfo,
+  .ventoInfo {
+      color: var(--color-text);
+      font-size: 30px;
+      font-weight: bold;
+  }
+
+  .tempInfo sup {
+      font-size: 15px;
+      font-weight: normal;
+  }
+
+  .ventoInfo span {
+      font-size: 15px;
+      font-weight: normal;
+  }
+
+  .ventoArea {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #FFF;
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 20px;
+      padding-left: 25px;
+      padding-top: 25px;
+  }
+
+  .ventoPonto {
+      width: 15px;
+      height: 1px;
+      background-color: #FFF;
+      transform-origin: left;
+  }
+
+  .aviso {
+      color: var(--color-text);
+      padding-top: 20px;
+  }
+
+  footer {
+      margin-top: 20px;
+      color: #FFF;
+      font-size: 13px;
+  }

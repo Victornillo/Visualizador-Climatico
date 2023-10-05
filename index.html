@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador climatico</title>
+    <link rel="shortcut icon" href="/png-transparent-world-globe-free-content-environmental-s-globe-world-sphere.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Clima</h1>
+        <h1>Projeto de Visualização de Condições Climáticas Locais e Globais com OpenWeatherMap API</h1>
+
+        <div class="caixa1">
+
+
+            <div class="toggle">
+
+                <input id="switch" type="checkbox" name="theme">
+                <label for="switch">Toggle</label>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="tempo">
+
+            <form class="busca">
+                <input type="search" id="searchInput" placeholder="Digite o nome da cidade" />
+                <button>Buscar</button>
+            </form>
+
+
+            <div class="resultado">
+                <div class="titulo">--</div>
+
+                <div class="info">
+                    <div class="temp">
+                        <div class="tempTitulo">
+                            <h2>Temperatura</h2>
+                        </div>
+                        <div class="tempInfo">-- <sup>ºC</sup></div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+                    </div>
+                    <div class="vento">
+                        <div class="ventoTitulo">
+                            <h2>Vento</h2>
+                        </div>
+                        <div class="ventoInfo">-- <span>km/h</span></div>
+                        <div class="ventoArea">
+                            <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aviso"></div>
+
+            <div class="caixa2">
+
+                <p>Este é um projeto empolgante que visa proporcionar uma maneira conveniente de verificar as condições
+                    climáticas em estados ou países de todo o mundo, utilizando a poderosa API OpenWeatherMap. Com esta
+                    aplicação, você poderá obter informações atualizadas e precisas sobre o clima em qualquer lugar do
+                    planeta. Aproveite a capacidade de explorar e planejar suas atividades com base nas previsões
+                    climáticas mais recentes.</p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
